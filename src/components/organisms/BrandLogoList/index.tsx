@@ -1,5 +1,6 @@
-import { logos } from "@/constants";
 import Image from "next/image";
+
+import { logos } from "@/constants";
 
 const BrandLogoList = () => {
   return (
@@ -20,6 +21,6 @@ const BrandLogoList = () => {
       </div>
     </div>
   );
-}
+};
 
 export default BrandLogoList;

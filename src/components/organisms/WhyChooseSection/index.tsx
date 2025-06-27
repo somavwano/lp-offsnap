@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import Wrapper from "@/components/atoms/Wrapper";
 import { contentCartsWhyChooseSection } from "@/constants";
-import Image from "next/image";
 
 const Title = () => {
   return (
@@ -29,7 +30,10 @@ const Title = () => {
 
 const ContentCart = () => {
   return contentCartsWhyChooseSection.map((el, index) => (
-    <div key={index} className="relative font-bold p-4 sm:min-h-[605px] lg:min-h-[682px]">
+    <div
+      key={index}
+      className="relative font-bold p-4 sm:min-h-[605px] lg:min-h-[682px]"
+    >
       <div className="max-w-[405px] mx-auto">
         <div className="flex text-center justify-center">
           <span className="inline-block px-4 py-1 w-[97px] h-[26px] border border-amethystGray text-amethystGray rounded-full text-amethyst text-xs font-bold">
@@ -49,11 +53,16 @@ const ContentCart = () => {
 
       <div className="w-full bg-white rounded-2xl sm:mt-6 mt-6">
         <div className="flex items-center justify-center text-center mt-8 sm:mt-0">
-          <p className="font-bold text-base sm:text-[22px] text-amethystGray">{el.title}</p>
+          <p className="font-bold text-base sm:text-[22px] text-amethystGray">
+            {el.title}
+          </p>
         </div>
 
         <div className="flex my-4">
-          <span className="text-[18px] font-bold leading-5"> {el.content} </span>
+          <span className="text-[18px] font-bold leading-5">
+            {" "}
+            {el.content}{" "}
+          </span>
         </div>
       </div>
     </div>
