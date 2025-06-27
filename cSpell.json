@@ -1,0 +1,55 @@
+{
+  // Version of the setting file.  Always 0.2
+  "version": "0.2",
+  // language - current active spelling language
+  "language": "en",
+  // words - list of words to be always considered correct
+  "words": [
+    "fieldname",
+    "OFFICEMILL_WEB",
+    "typecheck",
+    "tailwindcss",
+    "luxon",
+    "nestjs",
+    "sendgrid",
+    "liaoliaots",
+    "presigner",
+    "metatype",
+    "sendgrip",
+    "haibh",
+    "openapi",
+    "mailhog",
+    "codegen",
+    "openapiclean",
+    "openapitools",
+    "Fargate",
+    "elbv",
+    "aws_elasticloadbalancingv2",
+    "wafv2",
+    "aws_certificatemanager",
+    "keypair",
+    "healthcheck",
+    "autify",
+    "OIDC",
+    "Buildx",
+    "ghcup",
+    "Upsert",
+    "Repicle",
+    "repicle",
+    "nextui",
+    "nextui",
+    "NEXTAUTH",
+    "formatjs",
+    "localematcher",
+    "clsx",
+    "toastify",
+    "@tailwind",
+    "iconify",
+    "hookform",
+    "landingpage"
+  ],
+  // flagWords - list of words to be always considered incorrect
+  // This is useful for offensive words and common spelling errors.
+  // For example "hte" should be "the"
+  "flagWords": []
+}

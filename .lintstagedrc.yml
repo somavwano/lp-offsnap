@@ -1,0 +1,7 @@
+"*.{ts,tsx,js}":
+  - pnpm lint:typecheck:staged
+  - eslint --fix
+  - prettier --write
+"*.{json,yml,html,css,scss}":
+  - pnpm lint:typecheck:staged
+  - prettier --write

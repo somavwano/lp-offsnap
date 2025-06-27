@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #545556;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #848586;
+  }
+}
+
+.roles-technology-gradient {
+  background: linear-gradient(
+    99.75deg,
+    rgba(12, 56, 81, 0.8) 0%,
+    rgba(12, 56, 81, 0.8) 100%
+  );
+}
