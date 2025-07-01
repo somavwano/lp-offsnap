@@ -8,6 +8,10 @@ import OffisBanner from "@/components/organisms/OffisBanner";
 import PricingPlans from "@/components/organisms/PricingPlans";
 import ProblemsSection from "@/components/organisms/ProblemsSection";
 import WhyChooseSection from "@/components/organisms/WhyChooseSection";
+import UsageFlow from "@/components/organisms/UsageFlow";
+import BrandShowcase from "@/components/organisms/BrandShowcase";
+import OffisnapVsQuoteSitesComparison from "@/components/organisms/OffisnapVsQuoteSitesComparison";
+import FrequentlyAskedQuestions from "@/components/organisms/FrequentlyAskedQuestions";
 
 export default function HomePage() {
   return (
@@ -31,11 +35,15 @@ export default function HomePage() {
         </Wrapper>
       </div>
       <WhyChooseSection />
+      <UsageFlow />
+      <BrandShowcase />
       <div className="bg-white">
         <Wrapper>
           <PricingPlans />
         </Wrapper>
       </div>
+      <OffisnapVsQuoteSitesComparison />
+      <FrequentlyAskedQuestions />
     </>
   );
 }

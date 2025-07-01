@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 import Wrapper from "@/components/atoms/Wrapper";
+import Image from "next/image";
 
 const Title = () => {
   return (
@@ -78,7 +77,7 @@ const BenefitsAfterSignup = () => {
                   </BoldText>
                   です。
                   <br />
-                  導入企業にとっても、事例として紐付けられることで
+                   導入企業にとっても、事例として紐付けられることで
                   <BoldText>
                     自社ページへのアクセス増加が期待できるため、ひも付け申請の積極的なご活用をおすすめ
                   </BoldText>
@@ -90,7 +89,7 @@ const BenefitsAfterSignup = () => {
                     ぜひOFFISNAPをご紹介ください。
                     <br />
                   </BoldText>
-                  ?掲載が完了次第、
+                   掲載が完了次第、
                   <BoldText>
                     自動的に御社との導入事例としてひも付けが行われます。
                   </BoldText>

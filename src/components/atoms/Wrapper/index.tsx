@@ -11,7 +11,7 @@ const Wrapper = ({
   return (
     <div
       className={clsx(
-        "lg:max-w-[1264px] mx-auto xl:px-0 lg:px-8 px-6 sm:px-6",
+        "lg:max-w-[1264px] mx-auto xl:px-0 lg:px-8 px-2 sm:px-6",
         style && style
       )}
     >

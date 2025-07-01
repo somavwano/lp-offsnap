@@ -10,7 +10,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <html lang="ja" suppressHydrationWarning>
         <body
           className={clsx(
-            "min-h-screen font-be-vietnam-pro antialiased pb-10 !tracking-normal leading-normal sm:text-base text-sm text-secondary bg-gray-default w-full mx-auto",
+            "min-h-screen font-be-vietnam-pro antialiased pb-10 !tracking-normal leading-normal sm:text-base text-sm text-secondary bg-white w-full mx-auto",
             fontBeVietNamPro.variable,
             fontLato.variable,
             notoSans.variable

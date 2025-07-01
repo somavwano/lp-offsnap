@@ -1,3 +1,5 @@
+import DoubleCircle from "@/components/atoms/DoubleCircle";
+import XIcon from "@/components/atoms/XIcon";
 import { Plan } from "@/type/interface";
 
 export const listProgressCompany = [
@@ -27,27 +29,27 @@ export const listOfficeMerit = [
 export const logos = [
   {
     src: "/images/svg/yahoo.svg",
-    className: "w-[85px] sm:w-[170px] sm:h-[42px]",
+    className: "w-[85px] h-[21px] sm:w-[170px] sm:h-[42px]",
   },
   {
     src: "/images/svg/amazon.svg",
-    className: "w-[75px] sm:w-[150px] sm:h-[42px]",
+    className: "w-[75px] h-[21px] sm:w-[150px] sm:h-[42px]",
   },
   {
     src: "/images/svg/lifull.svg",
-    className: "w-[85px] sm:w-[170px] sm:h-[42px]",
+    className: "w-[85px] h-[21px] sm:w-[170px] sm:h-[42px]",
   },
   {
     src: "/images/svg/adastria.svg",
-    className: "w-[99px] sm:w-[198px] sm:h-[42px]",
+    className: "w-[99px] h-[23px] sm:w-[198px] sm:h-[46px]",
   },
   {
     src: "/images/svg/accenture.svg",
-    className: "w-[85px] sm:h-[42px] sm:w-[170px] h-[21px]",
+    className: "w-[85px] h-[23px] sm:h-[50px] sm:w-[170px] h-[21px]",
   },
   {
     src: "/images/svg/line.svg",
-    className: "w-[42.5px] sm:w-[85px] sm:h-[42px] h-[21px]",
+    className: "w-[42.5px] h-[23px] sm:w-[85px] sm:h-[42px] h-[21px]",
   },
   {
     src: "/images/svg/mixi.svg",
@@ -177,7 +179,7 @@ export const contentCartsWhyChooseSection = [
         できます。
       </>
     ),
-    urlImage: "/images/png/problems-section-first.png",
+    urlImage: "/images/png/why-choose-section-first.png",
   },
   {
     title: (
@@ -199,7 +201,7 @@ export const contentCartsWhyChooseSection = [
         できるプラットフォームです。
       </>
     ),
-    urlImage: "/images/png/problems-section-second.png",
+    urlImage: "/images/png/why-choose-section-second.png",
   },
   {
     title: (
@@ -226,6 +228,171 @@ export const contentCartsWhyChooseSection = [
         により、貴社の強みに合った企業との出会いも後押しします。
       </>
     ),
-    urlImage: "/images/png/problems-section-third.png",
+    urlImage: "/images/png/why-choose-section-third.png",
+  },
+];
+
+export const columnsOffisnapVsQuoteSitesComparison = [
+  {
+    header: null,
+    items: [
+      <div className="text-xs md:text-base">月額費用</div>,
+      <div className="text-xs md:text-base">
+        集客力
+        <br />
+        顧客の質
+      </div>,
+      <div className="text-xs md:text-base">
+        導入事例の
+        <br />
+        掲載
+      </div>,
+      <div className="text-xs md:text-base">
+        マッチング
+        <br />
+        サービス
+      </div>,
+    ],
+  },
+  {
+    header: {
+      text: "OFFISNAP",
+      isRed: true,
+    },
+    border: "border-4 border-rose-accent",
+    items: [
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <DoubleCircle />
+        <div className="text-[18px] sm:text-xl md:text-2xl lg:text-[32px] text-rose-accent leading-6 md:leading-8 lg:leading-9">
+          30,000円〜50,000円
+          <span className="text-xs lg:text-base">（税抜き）</span>
+        </div>
+        <div className="text-[10px] sm:text-xs md:text-[14px] lg:text-base leading-4">
+          ※成約数が何件でも金額は固定
+        </div>
+      </div>,
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <DoubleCircle />
+        <div className="text-xs sm:text-sm lg:text-base text-deep-black">
+          <span className="text-rose-accent">オフィス環境を投資</span>
+          として考えるような 関心の高い担当者が訪れるため、
+          <span className="text-rose-accent">
+            質の高い顧客からの問い合わせが多い
+          </span>
+        </div>
+      </div>,
+      ,
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <DoubleCircle />
+        <div className="text-xs sm:text-sm lg:text-base text-deep-black">
+          企業側から導入事例をつないでくれたり、繋げる際にも
+          <span className="text-rose-accent">
+            ワンクリックで事例ひも付け可能
+          </span>
+        </div>
+      </div>,
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <DoubleCircle />
+        <div className="text-xs sm:text-sm lg:text-base text-deep-black">
+          イメージに合うオフィス写真を選ぶことで、
+          <span className="text-rose-accent">
+            最も相性の良い会社同士を繋ぐことができるAIマッチングサービス
+          </span>
+          。無駄が一切無い。
+        </div>
+      </div>,
+      ,
+    ],
+  },
+  {
+    header: {
+      text: "一括見積もりサイト",
+      isGray: true,
+    },
+    items: [
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <div>
+          <XIcon />
+        </div>
+        <div className="text-[18px] sm:text-xl md:text-2xl lg:text-[32px] leading-4 sm:leading-6 md:leading-8 lg:leading-9 text-gray-dark-muted">
+          <span className="text-xs lg:text-base">月</span>100,000
+          <span className="text-xs lg:text-base">円〜</span>500,000
+          <span className="text-xs lg:text-base">円（税抜き）</span>
+        </div>
+        <div className="text-[10px] sm:text-xs md:text-sm lg:text-base leading-4">
+          中には初期費用＋月額費用＋成約手数料の 一括見積もりサービスも
+        </div>
+      </div>,
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <div>
+          <XIcon />
+        </div>
+        <div className="text-xs sm:text-sm lg:text-base text-deep-black">
+          集客力が高く、問い合わせは多いが安さ、速さを求める問い合わせも多い
+        </div>
+      </div>,
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <div>
+          <XIcon />
+        </div>
+        <div className="text-xs sm:text-sm lg:text-base text-deep-black">
+          基本的に サポートはなし
+        </div>
+      </div>,
+      <div className="py-2 px-[2px] sm:py-3 sm:px-1 md:py-4 md:px-2 lg:py-4 lg:px-3 flex flex-col items-center justify-center gap-2">
+        <div>
+          <XIcon />
+        </div>
+        <div className="text-xs sm:text-sm lg:text-base text-deep-black">
+          一括見積もりの担当者からの紹介があるが複数企業に紹介しているため制度は高く無い
+        </div>
+      </div>,
+    ],
+  },
+];
+
+export const listAskQuestion = [
+  {
+    ask: "利用にあたって条件はありますか？",
+    titleQuestion: "はい、OFFISNAPは法人向けのサービスとなっております。",
+    question:
+      "ご登録・ご利用いただけるのは、法人格を有する企業・団体様に限らせていただいております。個人事業主様やフリーランスの方のご利用は現在のところ対象外となりますので、あらかじめご了承ください。",
+  },
+  {
+    ask: "自社のオフィスも掲載できますか？",
+    titleQuestion: "はい、掲載可能です。",
+    question:
+      "パートナーとして有料プランをご契約いただいている場合、ご自身の企業オフィスを「オフィスオーナー」として無料で掲載することができます。自社の実績紹介やブランディングにもつながりますので、ぜひご活用ください。",
+  },
+  {
+    ask: "自社の導入事例を掲載することはできますか？",
+    titleQuestion:
+      "はい、導入企業様がOFFISNAPに掲載されている場合に限り、導入事例として紐づけが可能です。",
+    question:
+      "導入先の企業様がOFFISNAPに登録・掲載されていれば、御社のページと紐づけることで、導入事例として表示することができます。まだ掲載されていない場合には、導入企業様にOFFISNAPの無料掲載をご案内いただくことで、掲載完了後に紐づけが可能となります。",
+  },
+  {
+    ask: "解約はいつでもできますか？",
+    titleQuestion: "はい、いつでもご解約いただけます。",
+    question:
+      "ご契約は1ヶ月ごとの自動更新制となっており、次回更新の1ヶ月前までにご連絡いただければ、いつでも解約が可能です。無理な継続契約などは一切ございませんので、ご安心ください。",
+  },
+  {
+    ask: "解約後、掲載されていた情報はどうなりますか？",
+    titleQuestion: "解約後はすべての掲載情報が非公開となります。",
+    question:
+      "解約後は、オフィス情報やプロフィールなど、全ての掲載内容がOFFISNAP上に表示されなくなります。なお、再度ご契約いただければ、過去の情報をもとにスムーズに再掲載が可能ですので、ご安心ください。",
+  },
+  {
+    ask: "領収書は発行できますか？",
+    titleQuestion: "はい、領収書は管理画面からいつでも発行いただけます。",
+    question:
+      "ご利用中のプランに関する領収書は、ログイン後の管理ページよりダウンロード可能です。毎月の決済履歴とあわせてご確認いただけますので、経理処理にもご活用いただけます。",
+  },
+  {
+    ask: "支払い方法には何がありますか？",
+    titleQuestion: "お支払いはクレジットカード決済に対応しております。",
+    question:
+      "現在、OFFISNAPではクレジットカードによるお支払いのみご利用いただけます。銀行振込やその他の決済手段には対応しておりませんので、あらかじめご了承ください。",
   },
 ];

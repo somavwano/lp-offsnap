@@ -49,7 +49,7 @@ export default function HeaderLayer() {
       </div>
 
       <div className="flex lg:hidden">
-        <button className="flex items-center w-[171.5px] md:w-[267px] lg:h-12 h-[50px] justify-center gap-1">
+        <button className="flex items-center max-w-[171.5px] md:w-[267px] lg:h-12 h-[50px] justify-center gap-1">
           <span className="whitespace-normal">
             オフィス担当者<br />の方はこちら
           </span>
@@ -61,7 +61,7 @@ export default function HeaderLayer() {
           />
         </button>
 
-        <button className="flex items-center w-[171.5px] md:w-[254px] h-12 justify-center gap-1">
+        <button className="flex items-center max-w-[171.5px] md:w-[254px] h-12 justify-center gap-1">
           <span className="whitespace-normal">
             OFFISNAP<br />サービスサイト
           </span>

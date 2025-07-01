@@ -76,22 +76,37 @@ const OfficeMeritItems = ({
   );
 };
 
-export const OffSnapHeroBlockFooter = () => {
+type OffSnapHeroBlockFooterProps = {
+  isShadow?: boolean;
+  location?: string;
+  isText?: boolean;
+};
+
+export const OffSnapHeroBlockFooter = ({ isShadow = true, location = "bottom-[-25px]", isText= true }: OffSnapHeroBlockFooterProps) => {
   return (
-    <div className="sm:absolute left-0 right-0 bottom-[-25px] flex items-center sm:flex-row flex-col justify-center md:px-0 px-4">
-      <div className="text-primary text-xs text-left mb-2 sm:hidden block font-bold w-full pl-[37px]">
+    <div className={`sm:absolute left-0 right-0 ${location} flex items-center sm:flex-row flex-col justify-center md:px-0 px-4`}>
+      <div className={clsx(
+          "text-primary text-xs text-left sm:hidden block font-bold w-full pl-[37px]",
+          isShadow? "text-left mb-2": "text-center",
+          isText? "block": "hidden",
+        )}
+      >
         \ 今すぐ簡単！/
       </div>
       <div
         className={clsx(
-          "bg-white shadow-xl md:w-[700px] w-full rounded-[52px] md:px-10 sm:px-6 px-4 sm:py-4 py-2",
-          "flex items-end justify-between md:gap-x-10 sm:gap-x-6 gap-x-2 font-bold text-sm",
+          "md:w-[700px] w-full rounded-[52px] md:px-10 sm:px-6 px-4 sm:py-4 py-2",
+          "md:gap-x-10 sm:gap-x-6 gap-x-2 font-bold text-sm",
           "md:pt-[16px] pt-2",
-          " md:h-[104px] h-auto"
+          "md:h-[104px] h-auto",
+          isShadow? " bg-white shadow-xl flex items-end justify-between": "sm:flex sm:items-end",
         )}
       >
         <div className="flex-1 sm:block hidden">
-          <p className="text-primary text-xs text-center mb-2">
+          <p className={clsx(
+          "text-primary text-xs text-center mb-2",
+          isText? "block": "hidden",
+        )}>
             \ 今すぐ簡単！ /
           </p>
           <button className="h-[49px] text-white  bg-primary rounded-[24.5px] w-full">
@@ -103,7 +118,10 @@ export const OffSnapHeroBlockFooter = () => {
             今すぐ掲載(無料)
           </button>
         </div>
-        <div className="flex-1">
+        <div className={clsx(
+          "flex-1",
+          isShadow? "": "mt-2",
+        )}>
           <ContactButton />
         </div>
       </div>

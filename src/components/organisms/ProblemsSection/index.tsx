@@ -1,7 +1,6 @@
-import Image from "next/image";
-
 import Wrapper from "@/components/atoms/Wrapper";
 import { contentCartsProblemsSection } from "@/constants";
+import Image from "next/image";
 
 const ContentCart = () => {
   return contentCartsProblemsSection.map((el, index) => (
@@ -40,11 +39,7 @@ const ProblemsSection = () => {
         <Wrapper>
           <div className="mx-auto max-w-[460px] h-12 py-6 flex items-center justify-center">
             <h3 className="font-bold text-xl text-[20px] sm:text-[32px]">
-              こんな
-              <span className="text-amethystGray underline decoration-[6%] underline-offset-[14%] text-[22px] sm:text-[40px]">
-                お悩み
-              </span>
-              ありませんか？
+              こんな<span className="text-amethystGray underline decoration-[6%] underline-offset-[14%] text-[22px] sm:text-[40px]">お悩み</span>ありませんか？
             </h3>
           </div>
 

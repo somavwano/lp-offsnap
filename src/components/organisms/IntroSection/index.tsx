@@ -1,18 +1,15 @@
-import Image from "next/image";
-
-import ContactButton from "@/components/atoms/ContactButton";
 import IntroSectionWrapper from "@/components/atoms/IntroSectionWrapper";
-import TitleIntro from "@/components/atoms/TitleIntro";
-import TryNowButton from "@/components/atoms/TryNowButton";
 import Wrapper from "@/components/atoms/Wrapper";
+import TitleIntro from "@/components/atoms/TitleIntro";
+import Image from "next/image";
+import TryNowButton from "@/components/atoms/TryNowButton";
+import ContactButton from "@/components/atoms/ContactButton";
 
 const IntroSection = () => {
   return (
     <div className="w-full bg-white leading-[normal] tracking-[0.06em] py-6">
       <Wrapper>
-        <div className="md:mb-6 mb-4">
-          <TitleIntro />
-        </div>
+        <div className="md:mb-6 mb-4"><TitleIntro /></div>
         <IntroSectionWrapper>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
             <div className="flex-1 font-noto flex flex-col gap-10 break-words min-w[]">

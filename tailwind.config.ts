@@ -33,6 +33,8 @@ const config: Config = {
         "pink-soft": "#FFC7C9",
         "pink-soft-primary": "#FFE3E4",
         "gray-lightest": "#F8F8FB",
+        "gradient-red": "#FF555C",
+        "gradient-purple": "#844FB8",
       },
       boxShadow: {
         custom: "0px 8px 24px 0px rgba(0, 0, 0, 0.1)",
