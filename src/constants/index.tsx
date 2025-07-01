@@ -1,3 +1,5 @@
+/* eslint-disable no-sparse-arrays */
+/* eslint-disable react/jsx-key */
 import DoubleCircle from "@/components/atoms/DoubleCircle";
 import XIcon from "@/components/atoms/XIcon";
 import { Plan } from "@/type/interface";

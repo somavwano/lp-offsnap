@@ -1,8 +1,11 @@
+import { clsx } from "clsx";
 import Image from "next/image";
-import Wrapper from "./../../atoms/Wrapper/index";
-import clsx from "clsx";
-import { OffSnapHeroBlockFooter } from "../OffSnapHero";
+
 import { columnsOffisnapVsQuoteSitesComparison } from "@/constants";
+
+import { OffSnapHeroBlockFooter } from "../OffSnapHero";
+
+import Wrapper from "./../../atoms/Wrapper/index";
 
 const Title = () => {
   return (

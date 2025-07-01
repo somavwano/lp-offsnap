@@ -1,8 +1,9 @@
+import Image from "next/image";
+
 import GradientCircle from "@/components/atoms/GradientCircle";
 import Wrapper from "@/components/atoms/Wrapper";
-import Image from "next/image";
+
 import { OffSnapHeroBlockFooter } from "../OffSnapHero";
-import ContactButton from "@/components/atoms/ContactButton";
 
 const ContentUsageFlow = [
   {

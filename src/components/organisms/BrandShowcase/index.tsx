@@ -1,7 +1,9 @@
-import Wrapper from "@/components/atoms/Wrapper";
+import { clsx } from "clsx";
 import Image from "next/image";
+
+import Wrapper from "@/components/atoms/Wrapper";
 import { logos } from "@/constants";
-import clsx from "clsx";
+
 import { OffSnapHeroBlockFooter } from "../OffSnapHero";
 const LogoAchievements = () => {
   return (
@@ -117,7 +119,11 @@ const BrandShowcase = () => {
           <ListLogo />
         </div>
         <div className="relative h-[145px] md:h-[107px] mt-6">
-          <OffSnapHeroBlockFooter isShadow={false} location="bottom-0" isText={false} />
+          <OffSnapHeroBlockFooter
+            isShadow={false}
+            location="bottom-0"
+            isText={false}
+          />
         </div>
       </Wrapper>
     </div>

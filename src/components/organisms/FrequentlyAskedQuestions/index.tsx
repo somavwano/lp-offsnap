@@ -1,9 +1,10 @@
 "use client";
 
+import { clsx } from "clsx";
+import { useState } from "react";
+
 import Wrapper from "@/components/atoms/Wrapper";
 import { listAskQuestion } from "@/constants";
-import clsx from "clsx";
-import { useState } from "react";
 
 const AskQuestion = ({
   ask,
@@ -18,14 +19,14 @@ const AskQuestion = ({
 
   return (
     <div className="p-4 mt-2 sm:mt-4 lg:mt-6">
-      <div
+      <button
         onClick={() => setIsActive((prev) => !prev)}
         className="cursor-pointer text-amethystGray text-base sm:text-xl lg:text-2xl flex items-start justify-between w-full gap-2 mb-4"
       >
         <div className="lg:w-7">Q.</div>
         <div className="flex-1">{ask}</div>
         <PlusMinusIcon isActive={isActive} />
-      </div>
+      </button>
       <div
         className={clsx(
           "overflow-hidden transition-[max-height] duration-1000 ease-in-out",

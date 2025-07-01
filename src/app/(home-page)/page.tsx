@@ -1,17 +1,17 @@
 import Wrapper from "@/components/atoms/Wrapper";
 import BenefitsAfterSignup from "@/components/organisms/BenefitsAfterSignup";
 import BrandLogoList from "@/components/organisms/BrandLogoList";
+import BrandShowcase from "@/components/organisms/BrandShowcase";
+import FrequentlyAskedQuestions from "@/components/organisms/FrequentlyAskedQuestions";
 import IntroSection from "@/components/organisms/IntroSection";
 import OffSnapHero from "@/components/organisms/OffSnapHero";
 import OfficePartnerAi from "@/components/organisms/OfficePartnerAi";
 import OffisBanner from "@/components/organisms/OffisBanner";
+import OffisnapVsQuoteSitesComparison from "@/components/organisms/OffisnapVsQuoteSitesComparison";
 import PricingPlans from "@/components/organisms/PricingPlans";
 import ProblemsSection from "@/components/organisms/ProblemsSection";
-import WhyChooseSection from "@/components/organisms/WhyChooseSection";
 import UsageFlow from "@/components/organisms/UsageFlow";
-import BrandShowcase from "@/components/organisms/BrandShowcase";
-import OffisnapVsQuoteSitesComparison from "@/components/organisms/OffisnapVsQuoteSitesComparison";
-import FrequentlyAskedQuestions from "@/components/organisms/FrequentlyAskedQuestions";
+import WhyChooseSection from "@/components/organisms/WhyChooseSection";
 
 export default function HomePage() {
   return (
